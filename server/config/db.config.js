@@ -1,4 +1,4 @@
-const Sequelize = require("sequelize");
+const {Sequelize, DataTypes} = require("sequelize");
 
 const dbConfig = require("./db.constant");
 
@@ -26,6 +26,9 @@ db.sequelize = sequelize;
 // db.sequelize.sync({ force: true }).then(() => {
 //     console.log("Drop and re-sync db.");
 // });
+
+// Models
+db.users = require("../models/users")(sequelize, DataTypes);
 
 db.sequelize.sync()
   .then(() => {
