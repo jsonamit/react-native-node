@@ -21,6 +21,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 
+
 // force: true  means drop existing tables and re-sync database
 
 // db.sequelize.sync({ force: true }).then(() => {
