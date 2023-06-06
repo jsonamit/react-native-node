@@ -20,8 +20,7 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-
-
+// git push https://@github.com/jsonamit/react-native-node.git
 // force: true  means drop existing tables and re-sync database
 
 // db.sequelize.sync({ force: true }).then(() => {
