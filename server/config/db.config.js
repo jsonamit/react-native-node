@@ -40,4 +40,4 @@ db.sequelize.sync()
     console.log("Failed to sync db: " + err.message);
 });
 
-module.exports = db;
+module.exports = db;  
