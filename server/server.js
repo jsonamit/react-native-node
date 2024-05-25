@@ -12,7 +12,6 @@ const helmet = require('helmet');
 
 require('dotenv').config()
 
-// for parsing application/x-www-form-urlencoded
 app.use(bodyParse.urlencoded({extended:true}));
 
 // for parsing application/json
